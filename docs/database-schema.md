@@ -115,3 +115,4 @@ This document outlines the proposed structure for storing user data, meetings, c
 - Whiteboard JSON → Saved as downloadable files
 - Google Drive backup copies synced per user
 
+Thank you, Open AI
