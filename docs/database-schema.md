@@ -14,6 +14,7 @@ This document outlines the proposed structure for storing user data, meetings, c
 | role           | string   | 'student', 'teacher', or 'parent' |
 | studentOf      | array    | Teacher IDs (for parents/students) |
 | driveLinked    | boolean  | Whether Google Drive is connected |
+| googleDriveId    | string  | Google Drive ID for storing class materials and student work |
 | subscription   | object   | Stripe or PayPal subscription info |
 | notifications  | object   | Preferences for reminders, reports, etc. |
 
@@ -35,65 +36,35 @@ This document outlines the proposed structure for storing user data, meetings, c
 
 ---
 
-## 📄 Classwork Collection (`classwork`)
+## ❓ Question Bank Collection (`questions`)
 
-| Field           | Type     | Description |
-|----------------|----------|-------------|
-| id             | string   | Classwork ID |
-| assignedBy     | string   | Teacher UID |
-| assignedTo     | array    | Student UIDs |
-| createdAt      | timestamp| Creation time |
-| questions      | array    | List of `questionId`s |
-| meetingId      | string   | Optional link to a meeting |
-| isHomework     | boolean  | True if homework |
-| editableTemplate | boolean| True if numbers/names randomized |
+| Field               | Type     | Description |
+|----------------    |----------|-------------|
+| id                 | string   | Question ID |
+| subject            | string   | e.g., "Math", "Science" |
+| topic              | string   | e.g., "Algebra", "Calculus" |
+| difficulty         | string   | 'easy', 'medium', 'hard' |
+| anonymizedQuestion | string   | The modified question with anonymized numbers, names, and context |
+| withGraphs         | number   | Number of graphs in the question |
+| typesOfGraphs      | array    | Types of each Graph |
+| graphaData         | array    | multiple dimension of array to store the anonymized data or x,y coordinates of each graph |
+| withTables         | number   | number of tables in the question |
+| tablesHeadings     | array    | Headings of tables |
+| tables             | array    | arrays of two dimension arrays to store all anonymized cells of each table |
+| withPictures       | number   | number of pictures in the question |
+| pictures           | array    | [pictureId, image to text] Please create a new image and convert into text and store here|
+| steps              | array    | Breakdown of the solution |
+| variables          | object   | Editable variables (e.g., {a: 5, b: 12}) |
+| template           | string   | Question with placeholders |
+| hints              | array    | All hints written by teachers or AI |
+| answer             | string   | Final answer or pattern |
+| tags               | array    | For search/filtering |
 
----
 
-## ❓ Questions Collection (`questions`)
-
-| Field           | Type     | Description |
-|----------------|----------|-------------|
-| id             | string   | Question ID |
-| subject        | string   | e.g., "Math", "Science" |
-| topic          | string   | e.g., "Algebra", "Calculus" |
-| difficulty     | string   | 'easy', 'medium', 'hard' |
-| steps          | array    | Breakdown of the solution |
-| variables      | object   | Editable variables (e.g., {a: 5, b: 12}) |
-| template       | string   | Question with placeholders |
-| answer         | string   | Final answer or pattern |
-| tags           | array    | For search/filtering |
+> **Note:** All questions that are stored in the question bank will be anonymized to avoid any copyright violations. This will include modifying any real names, places, numbers, or contexts before storing them in the database.
 
 ---
 
-## 🧑‍🎓 Student Work (`classworkSubmissions`)
-
-| Field           | Type     | Description |
-|----------------|----------|-------------|
-| id             | string   | Submission ID |
-| studentId      | string   | Who submitted |
-| questionId     | string   | From which question |
-| attempts       | array    | List of answers and timestamps |
-| aiFeedback     | array    | List of AI comments |
-| timeSpent      | number   | Total time in seconds |
-| isCorrect      | boolean  | Final result |
-| hintTriggered  | boolean  | Did the student need a hint? |
-
----
-
-## 📊 Reports (`reports`)
-
-| Field           | Type     | Description |
-|----------------|----------|-------------|
-| id             | string   | Report ID |
-| meetingId      | string   | Optional link |
-| studentId      | string   | Reported student |
-| summary        | string   | Final summary by teacher or AI |
-| skillStats     | object   | Breakdown by skill or step |
-| submittedAt    | timestamp| Finalized time |
-| sharedWithParent | boolean| Sent to parent? |
-
----
 
 ## 💳 Subscriptions (`subscriptions`)
 
@@ -111,7 +82,7 @@ This document outlines the proposed structure for storing user data, meetings, c
 
 ## ☁️ Storage Notes
 
-- Screenshots, teaching materials → Firebase Storage
+- Screenshots, teaching materials, reports → Google Drive
 - Whiteboard JSON → Saved as downloadable files
 - Google Drive backup copies synced per user
 
