@@ -4,7 +4,7 @@ Tutoring Platform: Project Overview
 
 To build a professional online tutoring platform tailored for teachers and tutors that offers:
 
-Zoom-based live teaching with parental controls
+video-based live teaching with parental controls
 
 Per-student whiteboards using Excalidraw
 
@@ -16,7 +16,7 @@ A full teaching workflow for managing meetings, students, homework, and analytic
 
 1. Video Meetings
 
-Based on Zoom API (teacher-student sessions)
+created by ourselves (teacher-student sessions)
 
 Lock screen control (fullscreen enforced, focus detection)
 
@@ -84,7 +84,7 @@ Database: Firebase (Firestore, Storage)
 
 Authentication: Firebase Auth
 
-Video: Zoom API
+Video: Created by ourselves
 
 Whiteboard: Excalidraw
 
