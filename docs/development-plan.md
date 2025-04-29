@@ -7,7 +7,7 @@ This document outlines the phased development roadmap for the tutoring platform,
 ## Phase 1: Foundation (Weeks 1–3)
 
 - ✅ Set up GitHub repository and documentation structure
-- ✅ Choose core technologies: Next.js, Firebase, Excalidraw, Zoom (temporary), Stripe, PayPal
+- ✅ Choose core technologies: Next.js, Firebase, Excalidraw, WebSocket, Stripe, PayPal
 - ✅ Establish base project structure (monorepo or modular layout)
 - ✅ Set up authentication (Google OAuth)
 - ✅ Build landing page with pricing and subscription options
