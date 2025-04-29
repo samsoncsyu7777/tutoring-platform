@@ -10,7 +10,7 @@ This document outlines the key features of the tutoring platform, categorized by
 - **Live Whiteboard**: Interactive whiteboard for real-time teaching.
 - **Student Monitoring**: Track student focus and activity during sessions.
 - **AI Assistance**: Provide hints and feedback using AI.
-- **Session Recording**: Record sessions for future reference.
+// No recording feature in the beginning. We may develop it in the future- **Session Recording**: Record sessions for future reference.
 - **Performance Reports**: Generate reports on student performance.
 - **Payment Management**: Manage subscription and payment details.
 
@@ -22,7 +22,7 @@ This document outlines the key features of the tutoring platform, categorized by
 - **Join Live Sessions**: Participate in real-time tutoring sessions.
 - **Interactive Whiteboard**: Engage with the whiteboard during sessions.
 - **Receive AI Feedback**: Get instant feedback and hints.
-- **Session Playback**: Review recorded sessions.
+- // No recorded sessions now. We may develop it in the future **Session Playback**: Review recorded sessions.
 - **Progress Tracking**: Monitor personal performance and progress.
 
 ---
@@ -30,9 +30,9 @@ This document outlines the key features of the tutoring platform, categorized by
 ## 👨‍👩‍👧 Parent Features
 
 - **View Reports**: Access student performance reports.
-- **Session Monitoring**: Observe live sessions.
+- **Email Alert**: Get an email when students lose focus on the meeting.
 - **Notifications**: Receive updates on assignments and performance.
-- **Payment Oversight**: Manage and view payment information.
+- **Payment Reminder**: No payment methods provided for the parents. They should pay their teachers directly. We just remind them every month.
 
 ---
 
@@ -56,7 +56,7 @@ This document outlines the key features of the tutoring platform, categorized by
 
 ## 📱 Platform Compatibility
 
-- **Responsive Design**: Accessible on desktops, tablets, and smartphones.
+- **Responsive Design**: Accessible on desktops, and tablets.
 - **Cross-Browser Support**: Compatible with major web browsers.
 - **Offline Access**: Limited functionality available without internet.
 
