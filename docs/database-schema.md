@@ -1,6 +1,6 @@
 # Database Schema
 
-This document outlines the proposed structure for storing user data, meetings, classwork, homework, whiteboards, reports, and subscriptions using **Firebase Firestore**.
+This document outlines the proposed structure for storing user data, meetings, question bank, and subscriptions using **Firebase Firestore**. All sensitive media (e.g., screenshots, reports, teaching materials) will be stored in **Google Drive**, not in Firestore.
 
 ---
 
@@ -12,15 +12,15 @@ This document outlines the proposed structure for storing user data, meetings, c
 | name           | string   | Full name |
 | email          | string   | Email address |
 | role           | string   | 'student', 'teacher', or 'parent' |
-| studentOf      | array    | Teacher IDs (for parents/students) |
+| studentOf      | array    | List of teacher IDs (for parents/students) |
 | driveLinked    | boolean  | Whether Google Drive is connected |
-| googleDriveId    | string  | Google Drive ID for storing class materials and student work |
+| googleDriveId  | string   | Google Drive root folder ID for this user |
 | subscription   | object   | Stripe or PayPal subscription info |
 | notifications  | object   | Preferences for reminders, reports, etc. |
 
 ---
 
-## 📅 Meetings Collection (`meetings`)
+## 🗕️ Meetings Collection (`meetings`)
 
 | Field           | Type       | Description |
 |----------------|------------|-------------|
@@ -29,61 +29,79 @@ This document outlines the proposed structure for storing user data, meetings, c
 | studentIds     | array      | Attendees |
 | dateTime       | timestamp  | Start time |
 | duration       | number     | Duration in minutes |
-| classworkId    | string     | Linked classwork ID |
 | isLocked       | boolean    | Screen locked? |
 | emailOnBlur    | object     | Map of student ID → boolean |
-| screenshots    | array      | List of image URLs (classwork or lecture) |
+| screenshots    | array      | List of URLs pointing to Drive (teaching/classwork) |
 
 ---
 
 ## ❓ Question Bank Collection (`questions`)
 
 | Field               | Type     | Description |
-|----------------    |----------|-------------|
+|--------------------|----------|-------------|
 | id                 | string   | Question ID |
 | subject            | string   | e.g., "Math", "Science" |
 | topic              | string   | e.g., "Algebra", "Calculus" |
 | difficulty         | string   | 'easy', 'medium', 'hard' |
-| anonymizedQuestion | string   | The modified question with anonymized numbers, names, and context |
-| withGraphs         | number   | Number of graphs in the question |
-| typesOfGraphs      | array    | Types of each Graph |
-| graphaData         | array    | multiple dimension of array to store the anonymized data or x,y coordinates of each graph |
-| withTables         | number   | number of tables in the question |
-| tablesHeadings     | array    | Headings of tables |
-| tables             | array    | arrays of two dimension arrays to store all anonymized cells of each table |
-| withPictures       | number   | number of pictures in the question |
-| pictures           | array    | [pictureId, image to text] Please create a new image and convert into text and store here|
-| steps              | array    | Breakdown of the solution |
+| anonymizedQuestion | string   | Modified version with changed names, numbers, and context |
+| withGraphs         | number   | Number of graphs |
+| typesOfGraphs      | array    | Types (e.g., bar, line) |
+| graphData          | array    | Multi-dimensional data (e.g., coordinates) |
+| withTables         | number   | Number of tables |
+| tableHeadings      | array    | Headings for each table |
+| tables             | array    | Table data as 2D arrays |
+| withPictures       | number   | Number of images |
+| pictures           | array    | [pictureId, OCR text] |
+| steps              | array    | Step-by-step solution |
 | variables          | object   | Editable variables (e.g., {a: 5, b: 12}) |
-| template           | string   | Question with placeholders |
-| hints              | array    | All hints written by teachers or AI |
+| template           | string   | Question format with placeholders |
+| hints              | array    | Hints from teachers or AI |
 | answer             | string   | Final answer or pattern |
-| tags               | array    | For search/filtering |
+| tags               | array    | Tags for filtering/search |
 
-
-> **Note:** All questions that are stored in the question bank will be anonymized to avoid any copyright violations. This will include modifying any real names, places, numbers, or contexts before storing them in the database.
-
----
-
-
-## 💳 Subscriptions (`subscriptions`)
-
-| Field           | Type     | Description |
-|----------------|----------|-------------|
-| id             | string   | Firebase doc ID |
-| userId         | string   | Linked to user |
-| provider       | string   | 'stripe' or 'paypal' |
-| planType       | string   | 'basic', 'pro', etc. |
-| amount         | number   | Monthly cost |
-| status         | string   | 'active', 'canceled', etc. |
-| createdAt      | timestamp| Start time |
+> ⚠️ All questions must be anonymized before storage to avoid copyright issues.
 
 ---
 
-## ☁️ Storage Notes
+## 💳 Subscriptions Collection (`subscriptions`)
 
-- Screenshots, teaching materials, reports → Google Drive
-- Whiteboard JSON → Saved as downloadable files
-- Google Drive backup copies synced per user
+| Field       | Type      | Description |
+|------------|-----------|-------------|
+| id         | string    | Document ID |
+| userId     | string    | Linked user ID |
+| provider   | string    | 'stripe' or 'paypal' |
+| planType   | string    | e.g., 'basic', 'pro' |
+| amount     | number    | Monthly billing amount |
+| status     | string    | 'active', 'canceled', etc. |
+| createdAt  | timestamp | Start time |
 
-Thank you, Open AI
+---
+
+## ☁️ Storage Notes (Google Drive)
+
+Instead of storing large media files in the database, each user connects their **Google Drive**, and files are stored as follows:
+
+### 👨‍🏫 Teacher Folder Structure
+```
+(Date-Topic)/
+  ├── Teaching Materials screenshots/
+  ├── All Students Classwork screenshots/
+  ├── Homework screenshots – [Due Date]/
+  └── All Students Learning Reports/
+```
+
+### 👩‍🎓 Student Folder Structure
+```
+(Date-Topic)/
+  ├── Teaching Materials screenshots/
+  ├── Your Classwork screenshots/
+  ├── Homework screenshots – [Due Date]/
+  └── Learning Report/
+```
+
+> ⚠️ We **do not** store raw screenshots, whiteboard images, or learning reports in Firebase. All files are referenced via Google Drive file IDs.
+
+> ✅ Classwork data (like questions, student answers, durations, etc.) is stored **only in the frontend** memory for generating reports and then cleared.
+
+---
+
