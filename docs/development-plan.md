@@ -23,7 +23,7 @@ This document outlines the phased development roadmap for the tutoring platform,
 - 🧑‍🎓 Build student dashboard: class list, whiteboard access
 - 🧠 Integrate Excalidraw with custom whiteboards per student
 - 🔄 Add real-time syncing using Firebase or WebSockets
-- 🎥 Create our video meeting (or placeholder for custom video later)
+- 🎥 Develop custom video meeting system (WebRTC-based), using MediaSoup or Jitsi – no Zoom integration
 - 📦 Setup PWA behavior and fullscreen enforcement
 - 📩 Implement email notification system (attendance, alerts, reminders)
 
