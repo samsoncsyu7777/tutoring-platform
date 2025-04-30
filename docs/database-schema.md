@@ -74,6 +74,9 @@ This document outlines the proposed structure for storing user data, meetings, q
 | majorCountry        | string   | country in the majority |
 | majorCity           | string   | province or city in the majority |
 | majorLanguage       | string   | language in the majority |
+| sendFeeReminder    | boolean    | Send Tuition Fee reminder Email to parents? |
+| sendLessonReminder  | boolean    | Send Next Day Lesson reminder Email to students? |
+| sendHomeworkReminder  | boolean  | Send Next Day Homework Deadline reminder Email to students? |
 
 ---
 
