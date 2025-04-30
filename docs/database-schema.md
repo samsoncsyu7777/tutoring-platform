@@ -4,6 +4,23 @@ This document outlines the proposed structure for storing user data, meetings, q
 
 ---
 
+## 🧑 Teachers Collection (`teachers`)
+
+| Field           | Type     | Description |
+|----------------|----------|-------------|
+| uid            | string   | Firebase Auth ID |
+| name           | string   | Full name |
+| email          | string   | Email address |
+| students       | array    | List of students IDs |
+| parents        | array    | List of parents IDs |
+| classrooms     | array    | List of classrooms IDs |
+| driveLinked    | boolean  | Whether Google Drive is connected |
+| googleDriveId  | string   | Google Drive root folder ID for this user |
+| subscription   | object   | Stripe or PayPal subscription info |
+| notifications  | object   | Preferences for reminders, reports, etc. |
+
+---
+
 ## 🧑 Users Collection (`users`)
 
 | Field           | Type     | Description |
@@ -20,18 +37,33 @@ This document outlines the proposed structure for storing user data, meetings, q
 
 ---
 
-## 🗕️ Meetings Collection (`meetings`)
+## 🧑 Users Collection (`users`)
+
+| Field           | Type     | Description |
+|----------------|----------|-------------|
+| uid            | string   | Firebase Auth ID |
+| name           | string   | Full name |
+| email          | string   | Email address |
+| role           | string   | 'student', 'teacher', or 'parent' |
+| studentOf      | array    | List of teacher IDs (for parents/students) |
+| driveLinked    | boolean  | Whether Google Drive is connected |
+| googleDriveId  | string   | Google Drive root folder ID for this user |
+| subscription   | object   | Stripe or PayPal subscription info |
+| notifications  | object   | Preferences for reminders, reports, etc. |
+---
+
+## 🗕️ Classrooms Collection (`classrooms`)
 
 | Field           | Type       | Description |
 |----------------|------------|-------------|
-| id             | string     | Meeting ID |
+| id             | string     | Classroom ID |
 | teacherId      | string     | Owner of the meeting |
-| studentIds     | array      | Attendees |
+| students       | array      | Object of student ID, Google Drive Folder URL, Screen locked?, email parent when leave full-screen? |
 | dateTime       | timestamp  | Start time |
+| frequency      | number     | every number of days |
 | duration       | number     | Duration in minutes |
-| isLocked       | boolean    | Screen locked? |
-| emailOnBlur    | object     | Map of student ID → boolean |
-| screenshots    | array      | List of URLs pointing to Drive (teaching/classwork) |
+| allClassScreenLocked | boolean    | All students Screen locked? |
+| teacherDrive   | string      | Google Drive Folder URL to store materials, classwork, and homework |
 
 ---
 
