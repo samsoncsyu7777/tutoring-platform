@@ -10,6 +10,9 @@ This document outlines the proposed structure for storing user data, meetings, q
 |----------------|----------|-------------|
 | uid            | string   | Firebase Auth ID |
 | name           | string   | Full name |
+| country        | string   | country |
+| city           | string   | province or city |
+| language       | string   | language |
 | email          | string   | Email address |
 | students       | array    | List of student IDs |
 | parents        | array    | List of parent IDs |
@@ -25,6 +28,9 @@ This document outlines the proposed structure for storing user data, meetings, q
 |----------------|----------|-------------|
 | uid            | string   | Firebase Auth ID |
 | name           | string   | Full name |
+| country        | string   | country |
+| city           | string   | province or city |
+| language       | string   | language |
 | email          | string   | Email address |
 | teachers       | array    | List of teacher IDs |
 | parent         | string   | parent ID |
@@ -39,6 +45,9 @@ This document outlines the proposed structure for storing user data, meetings, q
 |----------------|----------|-------------|
 | uid            | string   | Firebase Auth ID |
 | name           | string   | Full name |
+| country        | string   | country |
+| city           | string   | province or city |
+| language       | string   | language |
 | email          | string   | Email address |
 | teachers       | array    | List of teacher IDs |
 | students       | array    | List of student IDs |
@@ -59,6 +68,9 @@ This document outlines the proposed structure for storing user data, meetings, q
 | duration       | number     | Duration in minutes |
 | allClassScreenLocked | boolean    | All students Screen locked? |
 | teacherDrive   | string      | Google Drive Folder URL to store materials, classwork, and homework |
+| majorCountry        | string   | country in the majority |
+| majorCity           | string   | province or city in the majority |
+| majorLanguage       | string   | language in the majority |
 
 ---
 
@@ -68,9 +80,12 @@ This document outlines the proposed structure for storing user data, meetings, q
 |--------------------|----------|-------------|
 | id                 | string   | Question ID |
 | subject            | string   | e.g., "Math", "Science" |
+| country            | string   | country |
+| city               | string   | province or city |
+| language           | string   | language |
 | topic              | string   | e.g., "Algebra", "Calculus" |
 | difficulty         | string   | 'easy', 'medium', 'hard' |
-| anonymizedQuestion | string   | Modified version with changed names, numbers, and context |
+| anonymizedQuestion | string   | Modified version with changed names, numbers, and context by AI |
 | withGraphs         | number   | Number of graphs |
 | typesOfGraphs      | array    | Types (e.g., bar, line) |
 | graphData          | array    | Multi-dimensional data (e.g., coordinates) |
