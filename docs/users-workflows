@@ -1,0 +1,38 @@
+Tutors
+  Homepage:
+    Introduction
+    Demo
+    Prices, Add On
+    Subscriptions
+    Unsubscribed account limit
+    Login
+    Register with Oauth
+
+  Logined Dashboard:
+    Add classroom
+    Classrooms
+    Settings
+    Calendar
+    Subscription Plan
+    Available Add On
+
+  Classroom Dashboard:
+    Add students
+    Students: 
+      screen locked? | parent | send email when leaving focus? | remark: eg. strength, weakness, personality | send lesson report? | save materials into Student Google Drive Folder?
+      All student settings are NIL. If one attribute is set, it will override the class setting on this student
+    Date and Time:
+    Frequency:
+    duration:
+    Teacher Google Drive Folder URL:
+    Major Country:
+    Major Province or City:
+    Major Language:
+    All Class screen locked?
+    All Class send email when leaving focus?
+    All Class send lesson report?
+    All Class save materials into Student Google Drive Folder?
+    
+
+  Settings:
+
