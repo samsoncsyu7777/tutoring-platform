@@ -11,45 +11,40 @@ This document outlines the proposed structure for storing user data, meetings, q
 | uid            | string   | Firebase Auth ID |
 | name           | string   | Full name |
 | email          | string   | Email address |
-| students       | array    | List of students IDs |
-| parents        | array    | List of parents IDs |
+| students       | array    | List of student IDs |
+| parents        | array    | List of parent IDs |
 | classrooms     | array    | List of classrooms IDs |
-| driveLinked    | boolean  | Whether Google Drive is connected |
-| googleDriveId  | string   | Google Drive root folder ID for this user |
 | subscription   | object   | Stripe or PayPal subscription info |
 | notifications  | object   | Preferences for reminders, reports, etc. |
 
 ---
 
-## 🧑 Users Collection (`users`)
+## 🧑 Students Collection (`students`)
 
 | Field           | Type     | Description |
 |----------------|----------|-------------|
 | uid            | string   | Firebase Auth ID |
 | name           | string   | Full name |
 | email          | string   | Email address |
-| role           | string   | 'student', 'teacher', or 'parent' |
-| studentOf      | array    | List of teacher IDs (for parents/students) |
-| driveLinked    | boolean  | Whether Google Drive is connected |
-| googleDriveId  | string   | Google Drive root folder ID for this user |
-| subscription   | object   | Stripe or PayPal subscription info |
+| teachers       | array    | List of teacher IDs |
+| parent         | string   | parent ID |
+| classrooms     | array    | List of classrooms IDs |
 | notifications  | object   | Preferences for reminders, reports, etc. |
 
 ---
 
-## 🧑 Users Collection (`users`)
+## 🧑 Parents Collection (`parents`)
 
 | Field           | Type     | Description |
 |----------------|----------|-------------|
 | uid            | string   | Firebase Auth ID |
 | name           | string   | Full name |
 | email          | string   | Email address |
-| role           | string   | 'student', 'teacher', or 'parent' |
-| studentOf      | array    | List of teacher IDs (for parents/students) |
-| driveLinked    | boolean  | Whether Google Drive is connected |
-| googleDriveId  | string   | Google Drive root folder ID for this user |
-| subscription   | object   | Stripe or PayPal subscription info |
+| teachers       | array    | List of teacher IDs |
+| students       | array    | List of student IDs |
+| classrooms     | array    | List of classrooms IDs |
 | notifications  | object   | Preferences for reminders, reports, etc. |
+
 ---
 
 ## 🗕️ Classrooms Collection (`classrooms`)
