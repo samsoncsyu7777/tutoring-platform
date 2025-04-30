@@ -62,11 +62,14 @@ This document outlines the proposed structure for storing user data, meetings, q
 |----------------|------------|-------------|
 | id             | string     | Classroom ID |
 | teacherId      | string     | Owner of the meeting |
-| students       | array      | Object of student ID, Google Drive Folder URL, Screen locked?, email parent when leave full-screen? |
+| students       | array      | Object of student ID, Google Drive Folder URL, Screen locked?, email parent when leave full-screen?, send lesson report?, save materials into student Google Drive Folder? |
 | dateTime       | timestamp  | Start time |
 | frequency      | number     | every number of days |
 | duration       | number     | Duration in minutes |
 | allClassScreenLocked | boolean    | All students Screen locked? |
+| allClassEmailNotFocus | boolean    | All students email parent when leave full-screen? |
+| allClassSendReport | boolean    | All students send lesson report? |
+| allClassSaveMaterials | boolean    | All students save materials into student Google Drive Folder? |
 | teacherDrive   | string      | Google Drive Folder URL to store materials, classwork, and homework |
 | majorCountry        | string   | country in the majority |
 | majorCity           | string   | province or city in the majority |
