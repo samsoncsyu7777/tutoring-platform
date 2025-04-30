@@ -14,7 +14,7 @@ Tutors
     Settings
     Calendar
     Subscription Plan
-    Available Add On
+    Available Add On: Screen Lock, AI hints and feedback
 
   Classroom Dashboard:
     Add students
@@ -24,6 +24,8 @@ Tutors
     Date and Time:
     Frequency:
     duration:
+    subject:
+    student major age:
     Teacher Google Drive Folder URL:
     Major Country:
     Major Province or City:
@@ -35,7 +37,14 @@ Tutors
     Send Tuition Fee reminder Email to parents?
     Send Next Day Lesson reminder Email to students?
     Send Next Day Homework Deadline reminder Email to students?
+    Use AI hints and feedback?
+      Remarks: [Screen Lock, AI hints and feedback] are add on. If tutor hasn't subscribe these add on and they select these options, route them to add on subscription page
     
 
   Settings:
+    Country:
+    Province or City:
+    Language:
+    Send Lesson Reminder Email to themselves?
+
 
