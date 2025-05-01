@@ -17,8 +17,8 @@ This document outlines the proposed structure for storing user data, meetings, q
 | students       | array    | List of student IDs |
 | parents        | array    | List of parent IDs |
 | classrooms     | array    | List of classrooms IDs |
-| subscription   | object   | Stripe or PayPal subscription info |
-| subscriptPlan  | object   | annually or monthly? add screen lock? add AI feedback? number of hours left? currency? amount? promotion code?
+| payment        | object   | Stripe or PayPal payment info |
+| subscription   | object   | annually or monthly? add screen lock? add AI feedback? number of hours left? currency? amount? promotion code?
 | notifications  | object   | Preferences for reminders, reports, etc. |
 
 ---
@@ -93,6 +93,7 @@ This document outlines the proposed structure for storing user data, meetings, q
 | city               | string   | province or city |
 | language           | string   | language |
 | topic              | string   | e.g., "Algebra", "Calculus" |
+| subic              | string   | e.g., "quadratic factoring", "Differentiation Optimization" |
 | difficulty         | string   | 'easy', 'medium', 'hard' |
 | anonymizedQuestion | string   | Modified version with changed names, numbers, and context by AI |
 | withGraphs         | number   | Number of graphs |
@@ -114,19 +115,27 @@ This document outlines the proposed structure for storing user data, meetings, q
 
 ---
 
-## 💳 Subscriptions Collection (`subscriptions`)
+## 💳 Subscriptions Collection (`subscriptions`) (Object stored in Teacher's schema)
 
 | Field       | Type      | Description |
 |------------|-----------|-------------|
 | id         | string    | Document ID |
 | userId     | string    | Linked user ID |
-| provider   | string    | 'stripe' or 'paypal' |
-| planType   | string    | e.g., 'basic', 'pro' |
-| amount     | number    | Monthly billing amount |
-| status     | string    | 'active', 'canceled', etc. |
+| provider   | string    | One from the Array of {'stripe' or 'paypal'} |
+| planType   | string    | One from the Array of {'Free', 'Standard', 'Premium', 'Enterprise'} (Will add new types here in the future) |
+| AddOn      | string    | One from the Array of {'Screen Lock', 'AI Feedback'} (Will add new add on in the future) |
+| frequency  | number    | One from the Array of {1, 12} monthly: 1, annually: 12 (We may have quarterly: 3, semi-annually: 6 in the future) |
+| amount     | number    | billing amount in US$ each time |
+| currency   | string    | One from the Array of {US$, CAD$, UK$, EURO$, YUAN$, HK$, YEN$, AUST$} |
+| promotionCode | string | Promtion code used this time |
+| previousPlanType     | array    | List of all previous Plan types |
 | createdAt  | timestamp | Start time |
+| lastDate   | timestamp | Last valid date of this payment | 
+| timeLimits | array | { int meeting minutes limit, int 1st add on minutes limit, int 1st add on minutes limit} of a month (will add new add on in the future) |
 
 ---
+
+## Subscription Plans Collection (`subscription
 
 ## ☁️ Storage Notes (Google Drive)
 
