@@ -2,26 +2,24 @@ Tutors
   Homepage:
     Introduction
     Demo
-    Prices, Add On
-    Subscriptions
-    Unsubscribed account limit
+    Subscriptions Plans, Add On
     Login
     Register with Oauth
 
   Logined Dashboard:
     Add classroom
-    Classrooms
+    Classrooms(List of Classrooms)
     Settings
     Calendar
-    Subscription Plan
+    Subscription Plans
     Available Add On: Screen Lock, AI hints and feedback
 
   Classroom Dashboard:
-    Start the meeting
+    Start the Classroom
     Add students
     Students: 
       screen locked? | parent | send email when leaving focus? | remark: eg. strength, weakness, personality | send lesson report? | save materials into Student Google Drive Folder?
-      All student settings are NIL. If one attribute is set, it will override the class setting on this student
+      All student default settings are NIL. If one attribute is set, it will override the class setting on this student
     Date and Time:
     Frequency:
     duration:
@@ -49,8 +47,10 @@ Tutors
     Send Lesson Reminder Email to themselves?
 
 
-  Subscription Plan:
+  Subscription Plans:
     Support US$, CAD$, UK$, EURO$, YUAN$, HK$, YEN$, AUST$
+    All prices of other currencies should be converted from US$ automatically
+
     Free Plan:
       Hour limit per month: 55 minutes
       Screen Lock limit: 30 minutes
@@ -73,7 +73,7 @@ Tutors
       Screen Lock Add On: US$11
       AI feedback Add On: US$17
 
-    Enterprise Plan: US$329.9 monthly, US$3599.9 annually
+    Enterprise Plan: US$299.9 monthly, US$2999.9 annually
       Teachers: 10
       Hour limit per month: 200 hours
       Screen Lock limit: 240 minutes
@@ -82,7 +82,53 @@ Tutors
       Screen Lock Add On: US$100
       AI feedback Add On: US$160
 
-    
-      
 
 
+Students
+  Login Page: basic information of the platform
+
+  Logined dashboard:
+    More information of the platform(will have a promotion of AI homework practice app next year)
+    Classrooms(List of Classrooms)
+    Settings
+    Calendar
+
+  Classroom Dashboard: (No edit permission)
+    Enter the Classroom
+    Date and Time:
+    Frequency:
+    duration:
+    subject:
+    Major Language:
+
+  Settings: (No edit permission)
+    These settings can be changed by your parent's account
+    Country:
+    Province or City:
+    Language:
+    Age:
+
+Parents
+  Login Page: basic information of the platform
+
+  Logined dashboard:
+    More information of the platform(will have a promotion of AI homework practice app next year)
+    Classrooms(List of Classrooms)
+    Settings
+    Calendar
+
+  Classroom Dashboard: (No edit permission)
+    You cannot enter the Classroom
+    Date and Time:
+    Frequency:
+    duration:
+    subject:
+    Major Language:
+
+  Settings: (With edit permission)
+    These settings can be changed by your parent's account
+    Country:
+    Province or City:
+    Your Preferred Language:
+    Student's Preferred Language:
+    Student's Age:
