@@ -68,6 +68,7 @@ This document outlines the proposed structure for storing user data, meetings, q
 | dateTime       | timestamp  | Start time |
 | frequency      | number     | every number of days |
 | duration       | number     | Duration in minutes |
+| lastDate       | timestamp  | Last date of the class |
 | allClassScreenLocked | boolean    | All students Screen locked? |
 | allClassEmailNotFocus | boolean    | All students email parent when leave full-screen? |
 | allClassSendReport | boolean    | All students send lesson report? |
