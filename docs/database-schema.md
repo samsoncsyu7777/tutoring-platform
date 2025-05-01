@@ -124,23 +124,31 @@ This document outlines the proposed structure for storing user data, meetings, q
 | provider   | string    | One from the Array of {'stripe' or 'paypal'} |
 | planType   | string    | SubscriptionPlan ID {'Free', 'Standard', 'Premium', 'Enterprise'} (Will add new types here in the future) |
 | AddOn      | string    | One from the Array of {'Screen Lock', 'AI Feedback'} (Will add new add on in the future) |
-| frequency  | number    | One from the Array of {1, 12} monthly: 1, annually: 12 (We may have quarterly: 3, semi-annually: 6 in the future) |
-| amount     | number    | billing amount in US$ each time |
+| frequencyIndex  | number    | get frequency from array in Plans frequencies {1, 12} monthly: 1, annually: 12 (We may have quarterly: 3, semi-annually: 6 in the future) |
+| amountIndex     | number    | get amount from array in Plans amounts, billing amount in US$ each time |
 | currency   | string    | One from the Array of {US$, CAD$, UK$, EURO$, YUAN$, HK$, YEN$, AUST$} |
 | promotionCode | string | Promtion code used this time |
 | previousPlanType     | array    | List of all previous Plan types |
 | createdAt  | timestamp | Start time |
 | lastDate   | timestamp | Last valid date of this payment | 
-| timeLimits | array | { int meeting minutes limit, int 1st add on minutes limit, int 1st add on minutes limit} of a month (will add new add on in the future) |
+| timeLimits | array | { int meeting minutes limit (get with SubscriptionPlan ID), int 1st add on minutes limi(get with SubscriptionPlan ID), int 1st add on minutes limit(get with SubscriptionPlan ID)} of a month (will add new add on in the future) |
 
 ---
 
-## Subscription Plans Collection (`subscription`)
+## Subscription Plans Collection (`subscription-plans`)
 | Field       | Type      | Description |
 |------------|-----------|-------------|
 | id         | string    | SubscriptionPlan ID |
 | planType   | string    | One from the Array of {'Free', 'Standard', 'Premium', 'Enterprise'} (Will add new types here in the future) |
-| frequency  | number    | One from the Array of {1, 12} monthly: 1, annually: 12 (We may have quarterly: 3, semi-annually: 6 in the future) |
+| frequencies  | array  | allowed frequencies: Array of {1, 12} monthly: 1, annually: 12 (We may have quarterly: 3, semi-annually: 6 in the future) |
+| ammounts   | array    | amounts of each frequency eg. {19.9, 199.9} |
+| timeLimit  | number   | number of minutes of classroom meeting allowed per month |
+| addOnLimits | array   | { 1st add on limit, 2nd add on limit} in minutes (will add new add on in the future) |
+
+
+--
+
+## Add Ons Collection (`add-ons`)
 
 ## ☁️ Storage Notes (Google Drive)
 
