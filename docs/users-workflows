@@ -15,6 +15,7 @@ Tutors
     Available Add On: Screen Lock, AI hints and feedback
 
   Classroom Dashboard:
+    Teacher Google Drive Folder Permission and URL setup:
     Start the Classroom
     Add students
     Students: 
@@ -25,7 +26,6 @@ Tutors
     duration:
     subject:
     student major age:
-    Teacher Google Drive Folder URL:
     Major Country:
     Major Province or City:
     Major Language:
@@ -93,7 +93,8 @@ Students
     Settings
     Calendar
 
-  Classroom Dashboard: (No edit permission)
+  Classroom Dashboard: (Can change Google Drive setup. Others: No edit permission)
+    Student Google Drive Folder Permission and URL setup: Allow our app and their parent account to access
     Enter the Classroom
     Date and Time:
     Frequency:
@@ -119,6 +120,7 @@ Parents
 
   Classroom Dashboard: (No edit permission)
     You cannot enter the Classroom
+    Student Google Drive Folder Permission and URL: Please remind your kid to set up Google Drive Folder inside this classroom (if it is NIL)
     Date and Time:
     Frequency:
     duration:
@@ -126,7 +128,6 @@ Parents
     Major Language:
 
   Settings: (With edit permission)
-    These settings can be changed by your parent's account
     Country:
     Province or City:
     Your Preferred Language:
