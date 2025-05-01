@@ -17,6 +17,7 @@ Tutors
     Available Add On: Screen Lock, AI hints and feedback
 
   Classroom Dashboard:
+    Start the meeting
     Add students
     Students: 
       screen locked? | parent | send email when leaving focus? | remark: eg. strength, weakness, personality | send lesson report? | save materials into Student Google Drive Folder?
@@ -46,5 +47,42 @@ Tutors
     Province or City:
     Language:
     Send Lesson Reminder Email to themselves?
+
+
+  Subscription Plan:
+    Support US$, CAD$, UK$, EURO$, YUAN$, HK$, YEN$, AUST$
+    Free Plan:
+      Hour limit per month: 55 minutes
+      Screen Lock limit: 30 minutes
+      Send lesson reports limit: 1 lesson
+      AI hints and feedback: 30 minutes
+
+    Standard Plan: US$19.9 monthly, US$199.9 annually
+      Hour limit per month: 100 hours
+      Screen Lock limit: 120 minutes
+      Send lesson reports limit: No limit
+      AI hints and feedback: 120 minutes
+      Screen Lock Add On: US$6
+      AI feedback Add On: US$9
+
+    Premium Plan: US$35.9 monthly, US$339.9 annually
+      Hour limit per month: 200 hours
+      Screen Lock limit: 240 minutes
+      Send lesson reports limit: No limit
+      AI hints and feedback: 240 minutes
+      Screen Lock Add On: US$11
+      AI feedback Add On: US$17
+
+    Enterprise Plan: US$329.9 monthly, US$3599.9 annually
+      Teachers: 10
+      Hour limit per month: 200 hours
+      Screen Lock limit: 240 minutes
+      Send lesson reports limit: No limit
+      AI hints and feedback: 240 minutes
+      Screen Lock Add On: US$100
+      AI feedback Add On: US$160
+
+    
+      
 
 
