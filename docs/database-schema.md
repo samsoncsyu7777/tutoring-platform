@@ -119,10 +119,10 @@ This document outlines the proposed structure for storing user data, meetings, q
 
 | Field       | Type      | Description |
 |------------|-----------|-------------|
-| id         | string    | Document ID |
+| id         | string    | Subscription ID |
 | userId     | string    | Linked user ID |
 | provider   | string    | One from the Array of {'stripe' or 'paypal'} |
-| planType   | string    | One from the Array of {'Free', 'Standard', 'Premium', 'Enterprise'} (Will add new types here in the future) |
+| planType   | string    | SubscriptionPlan ID {'Free', 'Standard', 'Premium', 'Enterprise'} (Will add new types here in the future) |
 | AddOn      | string    | One from the Array of {'Screen Lock', 'AI Feedback'} (Will add new add on in the future) |
 | frequency  | number    | One from the Array of {1, 12} monthly: 1, annually: 12 (We may have quarterly: 3, semi-annually: 6 in the future) |
 | amount     | number    | billing amount in US$ each time |
@@ -135,7 +135,12 @@ This document outlines the proposed structure for storing user data, meetings, q
 
 ---
 
-## Subscription Plans Collection (`subscription
+## Subscription Plans Collection (`subscription`)
+| Field       | Type      | Description |
+|------------|-----------|-------------|
+| id         | string    | SubscriptionPlan ID |
+| planType   | string    | One from the Array of {'Free', 'Standard', 'Premium', 'Enterprise'} (Will add new types here in the future) |
+| frequency  | number    | One from the Array of {1, 12} monthly: 1, annually: 12 (We may have quarterly: 3, semi-annually: 6 in the future) |
 
 ## ☁️ Storage Notes (Google Drive)
 
