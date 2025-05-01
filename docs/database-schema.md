@@ -18,6 +18,7 @@ This document outlines the proposed structure for storing user data, meetings, q
 | parents        | array    | List of parent IDs |
 | classrooms     | array    | List of classrooms IDs |
 | subscription   | object   | Stripe or PayPal subscription info |
+| subscriptPlan  | object   | annually or monthly? add screen lock? add AI feedback? number of hours left? currency? amount? promotion code?
 | notifications  | object   | Preferences for reminders, reports, etc. |
 
 ---
@@ -31,6 +32,7 @@ This document outlines the proposed structure for storing user data, meetings, q
 | country        | string   | country |
 | city           | string   | province or city |
 | language       | string   | language |
+| age            | number   | increase by one automatically at 23:59 August 31 |
 | email          | string   | Email address |
 | teachers       | array    | List of teacher IDs |
 | parent         | string   | parent ID |
