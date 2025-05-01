@@ -13,6 +13,7 @@ Tutors
     Calendar
     Subscription Plans
     Available Add On: Screen Lock, AI hints and feedback
+    Terms of Use of Teachers and Disclaimer
 
   Classroom Dashboard:
     Teacher Google Drive Folder Permission and URL setup:
@@ -93,6 +94,7 @@ Students
     Classrooms(List of Classrooms)
     Settings
     Calendar
+    Terms of Use and Disclaimer
 
   Classroom Dashboard: (Can change Google Drive setup. Others: No edit permission)
     Student Google Drive Folder Permission and URL setup: Allow our app and their parent account to access
@@ -119,6 +121,7 @@ Parents
     Classrooms(List of Classrooms)
     Settings
     Calendar
+    Terms of Use and Disclaimer
 
   Classroom Dashboard: (No edit permission)
     You cannot enter the Classroom
@@ -141,15 +144,35 @@ Parents
 Admin
   Teachers
   Classrooms
+  Students
+  Parents
+  
 
   Teachers Dashboard:
     Add teacher (Remind Admin he/she hasn't signed up and subscribed)
     Search teacher
     Edit teacher (Remind Admin whether the teacher approves this change)
     Delete teacher (Remind Admin whether the teacher has violated the terms of use)
+    Add Attribute to Teacher schema
 
   Classrooms Dashboard:
     Add classroom (Remind Admin whether a teacher is responsible for it)
     Search classroom
     Edit classroom (Remind Admin whether the teacher approves this change)
-    Delete classroom (Remind Admin whether the teacher and all students and parents know that it comes to the end of this classroom)
+    Delete classroom (Remind Admin whether the teacher, all students and parents know that it comes to the end of this classroom)
+    Add Attribute to Classroom schema
+
+  Students Dashboard:
+    Add student (Remind Admin he/she hasn't signed up)
+    Search student
+    Edit student (Remind Admin whether the parent approves this change)
+    Delete student (Remind Admin whether the student has violated the terms of use)
+    Add Attribute to Student schema
+
+
+  Parents Dashboard:
+    Add parent (Remind Admin he/she hasn't signed up)
+    Search parent
+    Edit parent (Remind Admin whether the parent approves this change)
+    Delete parent (Remind Admin whether the parent has violated the terms of use)
+    Add Attribute to Parent schema
