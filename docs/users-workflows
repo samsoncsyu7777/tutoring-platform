@@ -24,6 +24,7 @@ Tutors
     Date and Time:
     Frequency:
     duration:
+    Last Date: can be N/A
     subject:
     student major age:
     Major Country:
@@ -99,6 +100,7 @@ Students
     Date and Time:
     Frequency:
     duration:
+    Last Date: can be N/A
     subject:
     Major Language:
 
@@ -124,6 +126,7 @@ Parents
     Date and Time:
     Frequency:
     duration:
+    Last Date: can be N/A
     subject:
     Major Language:
 
@@ -133,3 +136,20 @@ Parents
     Your Preferred Language:
     Student's Preferred Language:
     Student's Age:
+
+
+Admin
+  Teachers
+  Classrooms
+
+  Teachers Dashboard:
+    Add teacher (Remind Admin he/she hasn't signed up and subscribed)
+    Search teacher
+    Edit teacher (Remind Admin whether the teacher approves this change)
+    Delete teacher (Remind Admin whether the teacher has violated the terms of use)
+
+  Classrooms Dashboard:
+    Add classroom (Remind Admin whether a teacher is responsible for it)
+    Search classroom
+    Edit classroom (Remind Admin whether the teacher approves this change)
+    Delete classroom (Remind Admin whether the teacher and all students and parents know that it comes to the end of this classroom)
