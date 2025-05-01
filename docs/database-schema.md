@@ -149,6 +149,13 @@ This document outlines the proposed structure for storing user data, meetings, q
 --
 
 ## Add Ons Collection (`add-ons`)
+| Field       | Type      | Description |
+|------------|-----------|-------------|
+| id         | string    | Add On ID |
+| Name       | string    | eg. 'Students' Screen Lock feature' |
+| amounts    | array     | prices of each frequency |
+
+--
 
 ## ☁️ Storage Notes (Google Drive)
 
