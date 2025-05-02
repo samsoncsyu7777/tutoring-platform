@@ -21,7 +21,7 @@ Tutors
     Start the Classroom
     Add students
     Students: 
-      parent | screen locked? | send email when leaving focus? | send lesson report? | save materials into Student Google Drive Folder? | remark: eg. strength, weakness, personality
+      name | student email | parent email | screen locked? | send email when leaving focus? | send lesson report? | save materials into Student Google Drive Folder? | remark: eg. strength, weakness, personality
       All student default settings are NIL. If one attribute is set, it will override the class setting on this student
     Time: Date and Time, Frequency, Duration, Last Date(can be N/A)
     Scope: Subject, Student major age, Major Country, Major Province or City, Major Language
@@ -77,7 +77,10 @@ Students
   Login Page: basic information of the platform
 
   Logined dashboard:
+    Student name
+    Student email
     More information of the platform(will have a promotion of AI homework practice app next year)
+    Parent email (Set by Teacher)
     Classrooms(List of Classrooms)
     Settings
     Calendar
@@ -101,6 +104,9 @@ Parents
   Login Page: basic information of the platform
 
   Logined dashboard:
+    Parent Name
+    Parent Email
+    Students' Emails (Set by Teachers)
     More information of the platform(will have a promotion of AI homework practice app next year)
     Classrooms(List of Classrooms)
     Settings
