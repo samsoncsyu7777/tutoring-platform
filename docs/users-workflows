@@ -85,10 +85,7 @@ Students
   Classroom Dashboard: (Can change Google Drive setup. Others: No edit permission)
     Student Google Drive Folder Permission and URL setup: Allow our app and their parent account to access
     Enter the Classroom
-    Date and Time:
-    Frequency:
-    duration:
-    Last Date: can be N/A
+    Time: Date and Time, Frequency, Duration, Last Date(can be N/A)
     subject:
     Major Language:
 
@@ -112,10 +109,7 @@ Parents
   Classroom Dashboard: (No edit permission)
     You cannot enter the Classroom
     Student Google Drive Folder Permission and URL: Please remind your kid to set up Google Drive Folder inside this classroom (if it is NIL)
-    Date and Time:
-    Frequency:
-    duration:
-    Last Date: can be N/A
+    Time: Date and Time, Frequency, Duration, Last Date(can be N/A)
     subject:
     Major Language:
 
@@ -124,7 +118,7 @@ Parents
     Province or City:
     Your Preferred Language:
     Student's Preferred Language:
-    Student's Age:
+    Student's Age: (automatically increase by 1 on Sept 1)
 
 
 Admin
@@ -143,6 +137,7 @@ Admin
 
   Teachers Dashboard:
     Add teacher (Remind Admin he/she hasn't signed up and subscribed)
+    Promotion Box
     Search teacher
     Edit teacher (Remind Admin whether the teacher approves this change)
     Delete teacher (Remind Admin whether the teacher has violated the terms of use)
@@ -157,6 +152,7 @@ Admin
 
   Students Dashboard:
     Add student (Remind Admin he/she hasn't signed up)
+    Promotion Box
     Search student
     Edit student (Remind Admin whether the parent approves this change)
     Delete student (Remind Admin whether the student has violated the terms of use)
@@ -165,6 +161,7 @@ Admin
 
   Parents Dashboard:
     Add parent (Remind Admin he/she hasn't signed up)
+    Promotion Box
     Search parent
     Edit parent (Remind Admin whether the parent approves this change)
     Delete parent (Remind Admin whether the parent has violated the terms of use)
@@ -174,3 +171,29 @@ Admin
     Add Plan
     Edit Plan
     Archive Plan
+
+  Promotion Codes
+    Generate new codes for 10% and 20% off every month and save( Show last month to next 4 months)
+    Pause Promotion? (Show 'Quota Limit Reached' when used)
+
+  Question Bank
+    Add question
+    Search question
+    Edit question
+    Delete question
+    Add Attribute to Question schema
+
+  Platform Settings
+    Logo, Outlook, Images, Videos, Features, About Us, Contact Us
+
+  Teacher Interface Settings
+    Edit Terms of Use and Disclaimer
+    Promotion box: Show? Contents:
+
+  Student Interface Settings
+    Edit Terms of Use and Disclaimer
+    Promotion box: Show? Contents:
+
+  Parent Interface Settings
+    Edit Terms of Use and Disclaimer
+    Promotion box: Show? Contents:
