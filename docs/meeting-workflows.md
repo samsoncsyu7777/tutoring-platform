@@ -3,7 +3,7 @@ Classroom Meeting Workflow
 Start:
   Teacher adjusts students' individual attributes like Video On?, Screen Lock?
   Teacher buttons: Video On/Off, Audio On/Off, Share Screen, Whiteboard, Award with Stickers, Chat
-  Student buttons:  Video On/Off, Audio On/Off, Share Screen, Chat with teacher only
+  Student buttons: Video On/Off, Audio On/Off, Share Screen, Chat with teacher only
 
 Teaching:
   Teacher shares screen:
