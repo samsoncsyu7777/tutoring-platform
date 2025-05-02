@@ -123,7 +123,7 @@ This document outlines the proposed structure for storing user data, meetings, q
 | userId     | string    | Linked user ID |
 | provider   | string    | One from the Array of {'stripe' or 'paypal'} |
 | planType   | string    | SubscriptionPlan ID {'Free', 'Standard', 'Premium', 'Enterprise'} (Will add new types here in the future) |
-| AddOn      | string    | One from the Array of {'Screen Lock', 'AI Feedback'} (Will add new add on in the future) |
+| AddOn      | string    | One from the Array of {'Screen Lock', 'AI Feedback', 'Auto Save'} (Will add new add on in the future) |
 | frequencyIndex  | number    | get frequency from array in Plans frequencies {1, 12} monthly: 1, annually: 12 (We may have quarterly: 3, semi-annually: 6 in the future) |
 | amountIndex     | number    | get amount from array in Plans amounts, billing amount in US$ each time |
 | currency   | string    | One from the Array of {US$, CAD$, UK$, EURO$, YUAN$, HK$, YEN$, AUST$} |
@@ -143,7 +143,7 @@ This document outlines the proposed structure for storing user data, meetings, q
 | frequencies  | array  | allowed frequencies: Array of {1, 12} monthly: 1, annually: 12 (We may have quarterly: 3, semi-annually: 6 in the future) |
 | ammounts   | array    | amounts of each frequency eg. {19.9, 199.9} |
 | timeLimit  | number   | number of minutes of classroom meeting allowed per month |
-| addOnLimits | array   | { 1st add on limit, 2nd add on limit} in minutes (will add new add on in the future) |
+| addOnLimits | array   | { 1st add on limit, 2nd add on limit, 3rd add on limit} in minutes (will add new add on in the future) |
 
 
 --
