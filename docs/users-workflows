@@ -18,7 +18,7 @@ Tutors
 
   Classroom Dashboard:
     Teacher Google Drive Folder Permission and URL setup:
-    Start the Classroom
+    Start the Classroom (Cannot start if limit is reached)
     Add students
     Students: 
       name | student email | parent email | screen locked? | send email when leaving focus? | send lesson report? | save materials into Student Google Drive Folder? | remark: eg. strength, weakness, personality
@@ -26,7 +26,7 @@ Tutors
     Time: Date and Time, Frequency, Duration, Last Date(can be N/A)
     Scope: Subject, Student major age, Major Country, Major Province or City, Major Language
     Class Settings: All Student screen locked?, Video On? Audio Off?, Send email when leaving focus?, Send lesson report?, Save materials into Student Google Drive Folder?, Send Tuition Fee reminder Email to parents?, Send Next Day Lesson reminder Email to students?, Send Next Day Homework Deadline reminder Email to students?, Use AI hints and feedback?
-      Remarks: [Screen Lock, AI hints and feedback] are add on. If tutor hasn't subscribe these add on and they select these options, route them to add on subscription page
+      Remarks: [Screen Lock, AI hints and feedback] are add on. If limit is reached or tutor hasn't subscribe these add on and they select these options, route them to add on subscription page
     
 
   Settings:
