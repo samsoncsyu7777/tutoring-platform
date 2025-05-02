@@ -42,7 +42,7 @@ Teaching:
     Promotion will be added to the email footer in the future.
 
   Screenshots:
-    Take a screenshot shot on every student’s classwork automatically at the background when teacher back to lecture
+    Take a screenshot on every student’s classwork automatically at the background when teacher back to lecture
     Show a button on teacher’s screen when teaching to screenshot the teaching materials
 
 Storage:
