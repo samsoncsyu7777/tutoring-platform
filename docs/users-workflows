@@ -130,7 +130,7 @@ Admin
   Subscription Plans
   Promotion Codes
   Question Bank
-  Platform Settings (Logo, Outlook, Images, Videos, Features, About Us, Contact Us)
+  Platform Settings (Logo, Outlook, Images, Videos, Features, About Us, Contact Us, Email Footer promotion)
   Teacher Interface Settings
   Classroom Interface Settings
   Student Interface Settings
@@ -185,7 +185,7 @@ Admin
     Add Attribute to Question schema
 
   Platform Settings
-    Logo, Outlook, Images, Videos, Features, About Us, Contact Us
+    Logo, Outlook, Images, Videos, Features, About Us, Contact Us, Parent Email Footer promotion, Student Email Footer promotion, Teacher Email Footer promotion
 
   Teacher Interface Settings
     Edit Terms of Use and Disclaimer
