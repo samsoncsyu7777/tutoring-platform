@@ -1,0 +1,57 @@
+Classroom Meeting Workflow
+
+Start:
+  Teacher adjusts students' individual attributes like Video On?, Screen Lock?
+  Teacher buttons: Video On/Off, Audio On/Off, Share Screen, Whiteboard, Award with Stickers, Chat
+  Student buttons:  Video On/Off, Audio On/Off, Share Screen, Chat with teacher only
+
+Teaching:
+  Teacher shares screen:
+    Drawing Toolbox: pen, shape, line, color, sticker, eraser, box
+    Crop question and go to Classwork
+
+  Teacher uses 1 whiteboard without scrolling:
+    Drawing Toolbox
+    Paste picture
+    Allow all or individual students to write
+    Display entire whiteboard to each student
+    Crop question and go to Classwork
+
+  Classwork:
+    Teacher selects an question area on their screen to crop
+    Each student has their own whiteboard
+    The app crops it and pastes it on every whiteboard
+    The meeting doesn’t share teacher’s screen but shows the whiteboard to the students
+    Show all whiteboards on teacher’s screen
+    When teacher clicks one whiteboard, it becomes full screen to let teacher write
+    There are “Previous whiteboard”, “Main List”, “Next whiteboard” buttons to navigate the whiteboards
+    On the main list, there is a button “Back to Lecture”, all students’ devices will focus on teacher’s screen
+
+  The AI response features on the whiteboards during classwork:
+    When the students try the classwork, the app will provide hints with AI when they wait for 8 seconds without writing anything
+    When the students try every step, the app will provide feedback with AI, like “it is correct” or “here is what needs to change …”
+    On teacher’s screen, show a button on every student to activate AI response or not 
+    When the students answer the question completely and correctly, the app will ask a further concept or question relevant and related to the question, if time is not up
+
+  The app will analyze the students’ classwork with AI as below:
+    Analyze the keys and relevant calculation skills of the question
+    Store the number of trials and the time spent by every student on every key and skill
+    Show the report on teacher’s screen when the meeting is over
+    Allow the teacher to edit the record and then save it
+    Show a button to send the individual reports of each student to their parents.
+    Promotion will be added to the email footer in the future.
+
+  Screenshots:
+    Take a screenshot shot on every student’s classwork automatically at the background when teacher back to lecture
+    Show a button on teacher’s screen when teaching to screenshot the teaching materials
+
+Storage:
+  Store all teaching materials and students’ individual classwork on students’ Google Drives
+  Store all teaching materials and all students’ classwork on the teacher’s Google Drive
+
+Management:
+  Remind parents to pay tuition fees by sending emails. Teachers can select at the beginning or the end of each month.
+  Remind students to attend meetings by sending emails to both students and parents 24 hours ahead. Remind them to submit a leave if they are not available to attend.
+  Promotion will be added to the email footer in the future.
+
+
