@@ -11,8 +11,7 @@ Tutors
     Classrooms(List of Classrooms)
     Settings
     Calendar
-    Subscription Plans
-    Available Add On: Screen Lock, AI hints and feedback
+    Subscription Plans and Available Add On: 1) Screen Lock, 2) AI hints and feedback (Plans, Add On can be added and edited on Admin page)
     Terms of Use of Teachers and Disclaimer
 
   Classroom Dashboard:
@@ -20,26 +19,13 @@ Tutors
     Start the Classroom
     Add students
     Students: 
-      screen locked? | parent | send email when leaving focus? | remark: eg. strength, weakness, personality | send lesson report? | save materials into Student Google Drive Folder?
+      parent | screen locked? | send email when leaving focus? | send lesson report? | save materials into Student Google Drive Folder? | remark: eg. strength, weakness, personality
       All student default settings are NIL. If one attribute is set, it will override the class setting on this student
-    Date and Time:
-    Frequency:
-    duration:
-    Last Date: can be N/A
-    subject:
-    student major age:
-    Major Country:
-    Major Province or City:
-    Major Language:
-    All Class screen locked?
-    All Class send email when leaving focus?
-    All Class send lesson report?
-    All Class save materials into Student Google Drive Folder?
-    Send Tuition Fee reminder Email to parents?
-    Send Next Day Lesson reminder Email to students?
-    Send Next Day Homework Deadline reminder Email to students?
-    Use AI hints and feedback?
-      Remarks: [Screen Lock, AI hints and feedback] are add on. If tutor hasn't subscribe these add on and they select these options, route them to add on subscription page
+    Time: Date and Time, Frequency, Duration, Last Date(can be N/A)
+    Scope: Subject, Student major age, Major Country, Major Province or City, Major Language
+    Class Settings: All Student screen locked?, Send email when leaving focus?, Send lesson report?, Save materials into Student Google Drive Folder?, Send Tuition Fee reminder Email to parents?,
+    Send Next Day Lesson reminder Email to students?, Send Next Day Homework Deadline reminder Email to students?, Use AI hints and feedback?
+        Remarks: [Screen Lock, AI hints and feedback] are add on. If tutor hasn't subscribe these add on and they select these options, route them to add on subscription page
     
 
   Settings:
