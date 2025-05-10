@@ -21,6 +21,7 @@ Tutors
     Teacher Google Drive Folder Permission and URL setup:
     Start the Classroom (Cannot start if limit is reached)
     Add students
+    Homework submission checklist
     Students: 
       name | student email | parent email | screen locked? | send email when leaving focus? | send lesson report? | save materials into Student Google Drive Folder? | remark: eg. strength, weakness, personality
       All student default settings are NIL. If one attribute is set, it will override the class setting on this student
@@ -100,6 +101,7 @@ Students
     Time: Date and Time, Frequency, Duration, Last Date(can be N/A)
     subject:
     Major Language:
+    Homework Submission (Use AI to mark the homework with simple comments and save to tutor's Google Drive)
 
   Settings: (No edit permission)
     These settings can be changed by your parent's account
