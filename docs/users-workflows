@@ -48,6 +48,7 @@ Tutors
       Send lesson reports limit: 1 lesson
       AI hints and feedback: 30 minutes
       Auto save materials to Google Drive: 1 lesson
+      Max number of students per meeting: 2
 
     Standard Plan: US$11.9 monthly, US$119.9 annually
       Time limit per month: 100 hours
@@ -58,6 +59,7 @@ Tutors
       Screen Lock Add On No Limit: US$4
       AI feedback Add On No Limit: US$8
       Auto save Add On No Limit: US$5
+      Max number of students per meeting: 10
 
     Premium Plan: US$19.9 monthly, US$199.9 annually
       Time limit per month: 200 hours
@@ -68,6 +70,7 @@ Tutors
       Screen Lock Add On No Limit: US$7
       AI feedback Add On No Limit: US$15
       Auto save Add On No Limit: US$9
+      Max number of students per meeting: 20
 
     Enterprise Plan: US$179.9 monthly, US$1699.9 annually
       Teachers: 10
@@ -79,6 +82,7 @@ Tutors
       Screen Lock Add On No Limit: US$60
       AI feedback Add On No Limit: US$140
       Auto save Add On No Limit: US$80
+      Max number of students per meeting: 30
 
 
 Students
@@ -101,7 +105,7 @@ Students
     Time: Date and Time, Frequency, Duration, Last Date(can be N/A)
     subject:
     Major Language:
-    Homework Submission (Use AI to mark the homework with simple comments and save to tutor's Google Drive)
+    Homework Submission: Max 5 files and each max 3M (Use AI to mark the homework with simple comments and save to tutor's Google Drive)
 
   Settings: (No edit permission)
     These settings can be changed by your parent's account
